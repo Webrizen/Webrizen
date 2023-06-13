@@ -2,26 +2,30 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
 }
 
+/* Dark Mode */
 @media (prefers-color-scheme: dark) {
   :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+    --primary-color: #1a202c; /* Adjust the primary color for dark mode */
+    --secondary-color: #2d3748; /* Adjust the secondary color for dark mode */
+    --text-color: #ffffff; /* Adjust the text color for dark mode */
   }
 }
 
+/* Light Mode */
+:root {
+  --primary-color: #f1f5f9; /* Adjust the primary color for light mode */
+  --secondary-color: #e2e8f0; /* Adjust the secondary color for light mode */
+  --text-color: #1a202c; /* Adjust the text color for light mode */
+}
+
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  color: var(--text-color);
+  background-color: var(--primary-color);
 }
