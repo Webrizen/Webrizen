@@ -1,0 +1,18 @@
+.movingBorder{
+  padding: 10px 20px;
+  background: linear-gradient(45deg, #29F3E2, #4DDDE0);
+  border: 0.1px solid rgba(0,0,0,0.1);
+  border-radius: 6px;
+  transition: all 0.3s ease-in-out;
+}
+.movingBorder:hover{
+  animation: glowing 2s alternate infinite;
+}
+@keyframes glowing{
+  0%{
+    background-position: -2000px;
+  }
+  100%{
+    background-position: 2000px;
+  }
+}
