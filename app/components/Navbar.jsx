@@ -1,98 +1,146 @@
 "use client";
-import React, { useState } from "react";
-import CustomButton from "./CustomButton";
+import { useState } from 'react';
+import {
+  AppBar,
+  Toolbar,
+  Typography,
+  IconButton,
+  Drawer,
+  List,
+  ListItem,
+  ListItemIcon,
+  ListItemText,
+  Box,
+  Button,
+} from '@mui/material';
+import {
+  Menu as MenuIcon,
+  Home as HomeIcon,
+  Store as ProductsIcon,
+  Build as ServicesIcon,
+  Work as PortfolioIcon,
+  Chat as BlogsIcon,
+  Info as AboutIcon,
+  Comment as TestimonialsIcon,
+  Description as ProposalIcon,
+  Gavel as LegalIcon,
+  Person as PersonIcon,
+} from '@mui/icons-material';
+import Link from 'next/link';
 
 const Navbar = () => {
-  const [isSidebarOpen, setSidebarOpen] = useState(false);
+  const [isDrawerOpen, setIsDrawerOpen] = useState(false);
 
-  const toggleSidebar = () => {
-    setSidebarOpen(!isSidebarOpen);
+  const toggleDrawer = () => {
+    setIsDrawerOpen(!isDrawerOpen);
   };
+
   return (
     <>
-      <nav className="bg-gray-50">
-        <div className="container mx-auto px-4">
-          <div className="flex justify-between items-center py-4">
-            {/* Logo */}
-            <div className="flex items-center">
-              <a href="#" className="text-2xl font-bold text-gray-800">
-                WebRizen
-              </a>
-            </div>
-
-            {/* Desktop Links */}
-            <div className="hidden md:flex items-center space-x-4">
-              <a href="#" className="text-gray-800 hover:text-gray-500">
-                Services
-              </a>
-              <a href="#" className="text-gray-800 hover:text-gray-500">
-                Products
-              </a>
-              <a href="#" className="text-gray-800 hover:text-gray-500">
-                Portfolio
-              </a>
-              <a href="#" className="text-gray-800 hover:text-gray-500">
-                Blogs
-              </a>
-              <a href="#" className="text-gray-800 hover:text-gray-500">
-                About
-              </a>
-            </div>
-
-            {/* Get a Proposal Button */}
-            <div className="flex items-center NextCustuu">
-              <CustomButton/>
-            </div>
-
-            {/* Mobile Hamburger Icon */}
-          <div className="md:hidden flex items-center">
-            <button
-              type="button"
-              className="text-gray-800 focus:outline-none"
-              onClick={toggleSidebar}
-            >
-              <svg
-                className="h-6 w-6"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth="2"
-                  d="M4 6h16M4 12h16M4 18h16"
-                ></path>
-              </svg>
-            </button>
-          </div>
-          </div>
-        </div>
-
-        {/* Mobile sidebar */}
-        {isSidebarOpen && (
-          <div className="md:hidden bg-gray-50 border-b">
-            <div className="px-4 py-4 space-y-2 text-center">
-              <a href="#" className="block text-gray-800 hover:text-gray-600">
-                Services
-              </a>
-              <a href="#" className="block text-gray-800 hover:text-gray-600">
-                Products
-              </a>
-              <a href="#" className="block text-gray-800 hover:text-gray-600">
-                Portfolio
-              </a>
-              <a href="#" className="block text-gray-800 hover:text-gray-600">
-                Blogs
-              </a>
-              <a href="#" className="block text-gray-800 hover:text-gray-600">
-                About
-              </a>
-              <CustomButton />
-            </div>
-          </div>
-        )}
-      </nav>
+      <AppBar position="fixed" sx={{ backdropFilter: 'blur(8px)', background: '#4DDDE0' }}>
+        <Toolbar>
+          <IconButton
+            color="inherit"
+            edge="start"
+            onClick={toggleDrawer}
+            sx={{ mr: 2 }}
+          >
+            <MenuIcon />
+          </IconButton>
+          <Typography variant="h6" component={Link} href='/' sx={{ flexGrow: 1, width: 'min-content' }}>
+            WebRizen
+          </Typography>
+          <Link href='/login'>
+            <Button color="inherit">
+              Login
+            </Button>
+          </Link>
+          <Link href='/signup'>
+            <Button color="inherit">
+              Sign Up
+            </Button>
+          </Link>
+        </Toolbar>
+      </AppBar>
+      <Drawer anchor="left" open={isDrawerOpen} onClose={toggleDrawer}>
+        <Box sx={{ width: 250 }}>
+          <List>
+            <Link href='/'>
+              <ListItem button onClick={toggleDrawer}>
+                <ListItemIcon>
+                  <HomeIcon />
+                </ListItemIcon>
+                <ListItemText primary="Home" />
+              </ListItem>
+            </Link>
+            <Link href='/products'>
+              <ListItem button onClick={toggleDrawer}>
+                <ListItemIcon>
+                  <ProductsIcon />
+                </ListItemIcon>
+                <ListItemText primary="Products" />
+              </ListItem>
+            </Link>
+            <Link href='/services'>
+              <ListItem button onClick={toggleDrawer}>
+                <ListItemIcon>
+                  <ServicesIcon />
+                </ListItemIcon>
+                <ListItemText primary="Services" />
+              </ListItem>
+            </Link>
+            <Link href='/portfolio'>
+              <ListItem button onClick={toggleDrawer}>
+                <ListItemIcon>
+                  <PortfolioIcon />
+                </ListItemIcon>
+                <ListItemText primary="Portfolio" />
+              </ListItem>
+            </Link>
+            <Link href='/blogs'>
+              <ListItem button onClick={toggleDrawer}>
+                <ListItemIcon>
+                  <BlogsIcon />
+                </ListItemIcon>
+                <ListItemText primary="Blogs" />
+              </ListItem>
+            </Link>
+            <Link href='/about'>
+              <ListItem button onClick={toggleDrawer}>
+                <ListItemIcon>
+                  <AboutIcon />
+                </ListItemIcon>
+                <ListItemText primary="About" />
+              </ListItem>
+            </Link>
+            <Link href='/testimonials'>
+              <ListItem button onClick={toggleDrawer}>
+                <ListItemIcon>
+                  <TestimonialsIcon />
+                </ListItemIcon>
+                <ListItemText primary="Testimonials" />
+              </ListItem>
+            </Link>
+            <Link href='/proposal'>
+              <ListItem button onClick={toggleDrawer}>
+                <ListItemIcon>
+                  <ProposalIcon />
+                </ListItemIcon>
+                <ListItemText primary="Get A Proposal" />
+              </ListItem>
+            </Link>
+            <Link href='/legal'>
+              <ListItem button onClick={toggleDrawer}>
+                <ListItemIcon>
+                  <LegalIcon />
+                </ListItemIcon>
+                <ListItemText primary="Legal" />
+              </ListItem>
+            </Link>
+          </List>
+        </Box>
+      </Drawer>
+      <Toolbar />
     </>
   );
 };

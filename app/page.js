@@ -3,6 +3,7 @@ import Button from '@mui/material/Button';
 import styles from './styles/home.module.css';
 import HeroIMG from './assets/images/4.png'
 import Image from 'next/image';
+import CampaignIcon from '@mui/icons-material/Campaign';
 
 export default function Home() {
 
@@ -10,6 +11,7 @@ export default function Home() {
       <>
       <section className={styles.home}>
         <div className={styles.left}>
+          <b><CampaignIcon/> Full Stack Web Dev Agency</b>
           <h1>
             A Place Where Imaginations Creates Dynamic Flaming Web Solutions.
           </h1>
