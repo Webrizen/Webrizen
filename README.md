@@ -1,34 +1,59 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+<!-- Introduction -->
+# Hi there, I'm WebRizen! 👋
 
-## Getting Started
+Welcome to WebRizen's GitHub profile! We are a dynamic web development agency, driven by a passion for crafting exceptional digital experiences.
 
-First, run the development server:
+<!-- Shields -->
+![GitHub followers](https://img.shields.io/github/followers/your_username?style=social)
+![Twitter Follow](https://img.shields.io/twitter/follow/your_twitter_username?style=social)
+![Website](https://img.shields.io/website?label=website&url=https%3A%2F%2Fwww.your-website.com%2F)
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-```
+<!-- Brief Overview -->
+## 🚀 About Us
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+We specialize in creating innovative and high-performance web solutions. Our team of dedicated professionals is committed to delivering top-notch results for our clients. With a focus on quality, creativity, and cutting-edge technologies, we strive to exceed expectations and bring ideas to life.
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+<!-- GitHub Stats -->
+## 📊 GitHub Stats
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+![WebRizen's GitHub stats](https://github-readme-stats.vercel.app/api?username=Webrizen&show_icons=true&count_private=true&theme=dark)
 
-## Learn More
+<!-- Skills and Expertise -->
+## 💼 Clients and Projects
 
-To learn more about Next.js, take a look at the following resources:
+- Number of Clients Worked With: 105
+- Number of Successful Projects: 100
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+<!-- Animated Skills -->
+## ⚡ Skills and Technologies
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=flat&logo=html5&logoColor=white)
+![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=flat&logo=css3&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat&logo=javascript&logoColor=black)
+![React](https://img.shields.io/badge/React-61DAFB?style=flat&logo=react&logoColor=black)
+![Node.js](https://img.shields.io/badge/Node.js-339933?style=flat&logo=node.js&logoColor=white)
+![Python](https://img.shields.io/badge/Python-3776AB?style=flat&logo=python&logoColor=white)
+<!-- Add more skills here -->
 
-## Deploy on Vercel
+<!-- Recent Projects -->
+## 🌟 Recent Projects
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+- Can't fetch the data
+<!-- Add more projects here -->
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+<!-- Contact Information -->
+## 📫 Get in Touch
+
+We would love to hear from you! Feel free to reach out to us through the following channels:
+
+- Website: [https://webrizen.netlify.app/](https://webrizen.netlify.app/)
+- Email: [webrizen@gmail.com](mailto:webrizen@gmail.com)
+- Founder: [Arsh]([https://www.instagram.com/Arshahdul_ahmed/](https://www.instagram.com/Arshahdul_ahmed/)
+
+Let's collaborate and bring your ideas to life!
+
+<!-- Footer -->
+<br>
+<p align="center">
+  <img src="https://visitor-badge.glitch.me/badge?page_id=Webrizen.Webrizen" alt="Visitors counter" align="center" />
+</p>
