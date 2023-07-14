@@ -56,3 +56,47 @@ a {
     display: none;
   }
 }
+
+.loading-screen{
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: #FAFAFA;
+  z-index: 999;
+}
+
+.spinner{
+  font-size: 40px;
+  widtH: 1em;
+  height: 1em;
+  fill: transparent;
+  stroke: #101010;
+  stroke-width: 4;
+  stroke-linecap: round;
+  stroke-dasharray: 125;
+  animation: spinner 4s linear infinite;
+}
+
+@keyframes spinner{
+  0%{
+    stroke-dashoffset: 25;
+    transform: rotate(0deg);
+  }
+  50%{
+    stroke-dashoffset: 125;
+    transform: rotate(720deg);
+  }
+  100%{
+    stroke-dashoffset: 25;
+    transform: rotate(1080deg);
+  }
+}
+
+.spinner > circle{
+  fill: transparent;
+}

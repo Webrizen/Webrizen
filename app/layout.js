@@ -23,7 +23,3 @@ export default function RootLayout({ children }) {
 
   );
 }
-
-// {/* <div className="theme-switch-container">
-//             <ThemeSwitch onChange={handleThemeChange} />
-//           </div> */}

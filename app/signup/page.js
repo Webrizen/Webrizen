@@ -1,12 +1,11 @@
 "use client";
 import React from 'react';
-import { useState, useContext, useEffect } from 'react';
+import { useState } from 'react';
 import InputAdornment from "@mui/material/InputAdornment";
 import { Visibility, VisibilityOff, Lock } from "@mui/icons-material";
 import IconButton from "@mui/material/IconButton";
 import { Container, Paper, TextField, Button, FormControlLabel, Checkbox } from '@mui/material';
 import styles from '../styles/home.module.css';
-import CampaignIcon from '@mui/icons-material/Campaign';
 import Logo from '../assets/images/logo.png';
 import Image from 'next/image';
 
